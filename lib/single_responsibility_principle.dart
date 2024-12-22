@@ -30,9 +30,8 @@ class PaymentProcessor {
 }
 
 String customerSalesReport(int customerId) {
-
   // Tow reason to change in this function this is bad
-  
+
   // Get customer data
   var customer = getCustomerData(customerId);
 
@@ -50,3 +49,27 @@ String customerSalesReport(int customerId) {
 getSalesByCustomerId(int customerId) {}
 
 getCustomerData(int customerId) {}
+
+// Example 2
+
+class EmployeeService {
+  void employeeRegistration(Employee employee) {
+    Employee.add(employee);
+    sendEmail(employee.email, "Registration", "Congratution!");
+  }
+
+  void sendEmail(String? email, String s, String t) {
+    var emailMessage = MimeMessage();
+
+    /// send email
+
+    /// and send notification
+  }
+}
+
+class MimeMessage {}
+
+class Employee {
+  String? email;
+  static void add(Employee employee) {}
+}
