@@ -8,7 +8,6 @@
 
 // Example
 class PaymentProcessor {
-
   // 4 functions for this class
   // Just this class for payment charge
   // to many reasons to change in this class this is bad
@@ -29,3 +28,25 @@ class PaymentProcessor {
     // saving to DB
   }
 }
+
+String customerSalesReport(int customerId) {
+
+  // Tow reason to change in this function this is bad
+  
+  // Get customer data
+  var customer = getCustomerData(customerId);
+
+  // Get Customer sales
+  var sales = getSalesByCustomerId(customerId);
+  // Create report data
+  String reportTitle = "Customer $customer\nSales: $sales";
+  String reportData = "Customer $customer\nSales: $sales";
+
+  var report = "$reportTitle\n$reportData";
+
+  return report;
+}
+
+getSalesByCustomerId(int customerId) {}
+
+getCustomerData(int customerId) {}
