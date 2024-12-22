@@ -8,6 +8,11 @@
 
 // Example
 class PaymentProcessor {
+
+  // 4 functions for this class
+  // Just this class for payment charge
+  // to many reasons to change in this class this is bad
+
   void charge(double amount) {
     // initialize bank data
     // send request to the bank
